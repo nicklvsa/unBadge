@@ -15,11 +15,13 @@ const routes: Routes = [
     {path: '', redirectTo: 'dashboard/student', pathMatch: 'full'},
     {path: 'student', component: StudentComponent},
     {path: 'teacher', component: TeacherComponent},
-  ]}
+  ]},
+  {path: 'student', redirectTo: 'dashboard/student', pathMatch: 'full'},
+  {path: 'teacher', redirectTo: 'dasshboard/teacher', pathMatch: 'full'}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
