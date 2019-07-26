@@ -11,13 +11,11 @@ const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'pricing', component: PricingComponent},
-  {path: 'dashboard/:user', component: DashboardComponent, children: [
-    {path: '', redirectTo: 'dashboard/student', pathMatch: 'full'},
-    {path: 'student', component: StudentComponent},
-    {path: 'teacher', component: TeacherComponent},
-  ]},
+  {path: 'dashboard', component: DashboardComponent},
+  {path: 'dashboard/student', component: StudentComponent},
+  {path: 'dashboard/teacher', component: TeacherComponent},
   {path: 'student', redirectTo: 'dashboard/student', pathMatch: 'full'},
-  {path: 'teacher', redirectTo: 'dasshboard/teacher', pathMatch: 'full'}
+  {path: 'teacher', redirectTo: 'dashboard/teacher', pathMatch: 'full'}
 ];
 
 @NgModule({
