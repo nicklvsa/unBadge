@@ -6,6 +6,15 @@ $nav-color: #232F3E;
     font-style: italic;
 }
 
+.navbar-burger {
+    height: 75px;
+    color: white;
+}
+
+.is-active {
+    background-color: $nav-color;
+}
+
 .has-dropdown:hover {
     background-color: blue;
 }
