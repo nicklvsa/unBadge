@@ -1,6 +1,20 @@
 $nav-font: 'Farro', sans-serif;
+$nav-color: #232F3E;
 
 .nav-title-2 {
     font-family: $nav-font;
     font-style: italic;
+}
+
+.has-dropdown:hover {
+    background-color: blue;
+}
+
+.nav-link {
+    color: white;
+}
+
+.unbadge-nav {
+    height: 75px;
+    background-color: $nav-color;
 }

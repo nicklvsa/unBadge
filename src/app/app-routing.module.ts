@@ -6,11 +6,13 @@ import { PricingComponent } from './pricing/pricing.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeacherComponent } from './dashboard/teacher/teacher.component';
 import { StudentComponent } from './dashboard/student/student.component';
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
   {path: 'pricing', component: PricingComponent},
+  {path: 'contact', component: ContactComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'dashboard/student', component: StudentComponent},
   {path: 'dashboard/teacher', component: TeacherComponent},

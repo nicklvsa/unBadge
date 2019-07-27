@@ -1,0 +1,23 @@
+$footer-color: #232F3E;
+
+.footer {
+    padding-top: 20px;
+    background-color: $footer-color;
+    text-align: center;
+}
+
+.footer-link-color {
+    color: white;
+}
+
+.footer-link {
+    padding: 40px;
+}
+
+.footer-slogan {
+    padding-top: 10px;
+}
+
+.footer-link:hover {
+    color: #1F9CED;
+}
