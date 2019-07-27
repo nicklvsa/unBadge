@@ -1,7 +1,10 @@
 $footer-color: #232F3E;
 
 .footer {
+    height: 22vh;
+    max-height: 50vh;
     padding-top: 30px;
+    padding-bottom: 0;
     background-color: $footer-color;
     text-align: center;
 }
