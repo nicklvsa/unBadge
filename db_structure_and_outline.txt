@@ -1,0 +1,44 @@
+TABLES {
+
+    users {
+        id - int,autoincrement (db structural identifier)
+        user - string (oauth user hash)
+        email - string (teacher, student, or admin email)
+        type - string (student, teacher, administrator)
+        auth - (clever, google classroom)
+        session - (current running session, destroyed when logged out)
+        session_active - boolean (true if active, false is destroyed)
+        plan - string (bcrypt hash of current paid or free plan)
+    }
+
+    classes {
+        id - int,autoincrement (db structural identifier)
+        corresponder - string (bcrypt hash of combined email and oauth hash of teacher that created and owns the class)
+        students - array[string] (array of student bcrypted emails)
+        class_name - string (name of class)
+
+    }
+
+    plans {
+        id - int,autoincrement (db structural identifier)
+        plan_name - string (name of plan)
+        plan_price - double (price of plan) (can be 0.00 or FREE)
+        plan_indentifier - string (hash identifier to refer to a plan)
+        active_users - int (number of actively paying subscriptions)
+        can_purchase - boolean (true or false)
+        plan_full_school - boolean (true or false)
+    }
+
+    schools {
+        id - int,autoincrement (db structural identifier)
+        school - string (name of school)
+        school_identifier - string (hash identifier to refer to a school)
+        plan - string (name of school wide plan being used)
+        plan_identifier - string (hash identifier to refer to a school specific plan)
+        staff - array[string] (array of staff under a school)
+        school_superusers - array[string] (array of staff that have full access to modify sensitive information)
+        school_notification_email - string (email that update notifications are sent to)
+        should_send_email_notifications - boolean (true or false)
+    }
+
+}
