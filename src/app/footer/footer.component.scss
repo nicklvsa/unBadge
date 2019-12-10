@@ -1,4 +1,5 @@
 $footer-color: #232F3E;
+$footer-title-size: 25px;
 
 .footer {
     height: 22vh;
@@ -9,8 +10,16 @@ $footer-color: #232F3E;
     text-align: center;
 }
 
+.footer-title {
+    font-size: $footer-title-size;
+}
+
 .footer-link-color {
     color: white;
+}
+
+.footer-title-starter {
+    padding-bottom: 20px;
 }
 
 .footer-link {
