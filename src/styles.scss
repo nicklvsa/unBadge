@@ -6,6 +6,17 @@
     flex-direction: column;
 }
   
+.unbadge-link {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.unbadge-link:hover {
+    color: black;
+    text-decoration: overline;
+}
+
 .content {
     flex: 1;
 }

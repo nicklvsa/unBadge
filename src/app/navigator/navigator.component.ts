@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef, Directive } from '@angular/core';
+import { DBService } from '../services/db/db.service';
 
 @Component({
   selector: 'app-navigator',
@@ -15,9 +16,12 @@ export class NavigatorComponent implements OnInit {
     this.navMenu.nativeElement.classList.toggle('is-active');
   }
 
-  constructor() { }
+  constructor(private db: DBService) {
+    
+  }
 
   ngOnInit() {
+
   }
 
 }

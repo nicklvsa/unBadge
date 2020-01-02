@@ -1,9 +1,47 @@
-.home-learn-more {
-    color: white;
-    font-weight: bold;
+$nav-font: 'Farro', sans-serif;
+
+.hero-title {
+    font-family: $nav-font;
     font-style: italic;
+    color: white;
 }
 
-.home-learn-more:hover {
-    color: black;
+.titler {
+    font-size: 70px;
+}
+
+.sm-prefix {
+    color: white;
+}
+
+.title-info-pref {
+    margin-top: 70px;
+}
+
+.title-info {
+    margin-left: -100px;
+}
+
+.hero-content {
+    display: flex;
+}
+
+.hero-content > p {
+    align-items: center;
+    max-width: 50%;
+}
+
+.hero-bg-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 120vh;
+    background-image: url('../../assets/herobg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    padding-bottom: 125px;
 }

@@ -1,13 +1,19 @@
+/* TODO: need to fix footer on smaller screens */
+
 $footer-color: #232F3E;
 $footer-title-size: 25px;
 
 .footer {
-    height: 22vh;
+    height: 100%;
     max-height: 50vh;
     padding-top: 30px;
     padding-bottom: 0;
     background-color: $footer-color;
     text-align: center;
+}
+
+.styled-footer-container {
+    padding-top: 25px;
 }
 
 .footer-title {
