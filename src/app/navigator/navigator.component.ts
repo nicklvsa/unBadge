@@ -8,8 +8,8 @@ import { DBService } from '../services/db/db.service';
 })
 export class NavigatorComponent implements OnInit {
 
-  @ViewChild('navBurger', {static: false, read: ElementRef}) navBurger: ElementRef;
-  @ViewChild('navMenu', {static: false, read: ElementRef}) navMenu: ElementRef;
+  @ViewChild('navBurger', { read: ElementRef }) navBurger: ElementRef;
+  @ViewChild('navMenu', { read: ElementRef }) navMenu: ElementRef;
 
   toggleNavbar() {
     this.navBurger.nativeElement.classList.toggle('is-active');
